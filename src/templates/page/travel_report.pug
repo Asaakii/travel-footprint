@@ -1,0 +1,192 @@
+//- 年度飞行报告：完全使用脱敏年度聚合数据，不展示票号、座位、备注等原始行程信息。
+#travel-report
+  if site.data.travel && site.data.travel.years[page.reportYear || "2025"]
+    - var t = site.data.travel
+    - var year = page.reportYear || "2025"
+    - var y = t.years[year]
+    - var totals = y.totals
+    - var durationH = Math.floor(totals.durationMin / 60)
+    - var durationM = totals.durationMin % 60
+    - var dayKeys = Object.keys(y.dailyCounts).sort()
+    - var firstDay = dayKeys[0]
+    - var lastDay = dayKeys[dayKeys.length - 1]
+    - var busyDay = dayKeys.slice().sort(function (a, b) { return y.dailyCounts[b] - y.dailyCounts[a] || a.localeCompare(b) })[0]
+    - var monthNames = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
+    - var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    - var cityNames = { "Chengdu": "成都", "Chengdu (Jianyang)": "成都", "Changchun": "长春", "Fuzhou": "福州", "Guangzhou": "广州", "Xiamen": "厦门", "Kuala Lumpur": "吉隆坡", "Tawau": "斗湖", "Kota Kinabalu": "亚庇", "Tokyo": "东京", "Osaka": "大阪" }
+    - var cityCounts = {}
+    - y.routes.forEach(function (route) { [route.from, route.to].forEach(function (iata) { var airport = t.airports[iata]; if (!airport) return; var city = cityNames[airport.city] || airport.city; cityCounts[city] = (cityCounts[city] || 0) + route.flights }) })
+    - var cities = Object.keys(cityCounts).map(function (city) { return { name: city, flights: cityCounts[city] } }).sort(function (a, b) { return b.flights - a.flights || a.name.localeCompare(b.name, "zh-CN") })
+    - var airlines = Object.keys(y.airlines).map(function (key) { return { name: key, flights: y.airlines[key].flights } }).sort(function (a, b) { return b.flights - a.flights || a.name.localeCompare(b.name) })
+    - var aircraft = Object.keys(y.aircraft).map(function (key) { return { name: key, flights: y.aircraft[key].flights } }).sort(function (a, b) { return b.flights - a.flights || a.name.localeCompare(b.name) })
+    - var reportPayload = JSON.stringify({ year: year, firstDay: firstDay, lastDay: lastDay, flights: totals.flights, distanceKm: totals.distanceKm, durationMin: totals.durationMin }).replace(/</g, "\\u003c")
+    script#annual-report-data(type="application/json")!= reportPayload
+
+    nav.annual-report-nav(aria-label="年度报告操作")
+      a.annual-report-back(href="/travel/" aria-label="返回行程统计") ← 返回
+      .annual-report-progress(aria-hidden="true")
+        span
+
+    main.annual-report-deck(data-report-deck tabindex="0" aria-label=year + " 年度飞行报告，滚动切换章节")
+      section.annual-report-slide.annual-cover(data-report-slide)
+        .annual-aurora(aria-hidden="true")
+        .annual-slide-inner.annual-cover-inner
+          p.annual-eyebrow 飞行年度报告 · #{year}
+          h1= year + "，于云端留下足迹"
+          p.annual-lede 从 #{firstDay.replace("-", " 月 ")} 日到 #{lastDay.replace("-", " 月 ")} 日，#{totals.flights} 次起落写成一年的行程。
+          .annual-cover-stats
+            span
+              strong= totals.flights
+              |  次飞行
+            span
+              strong= totals.distanceKm.toLocaleString("en-US")
+              |  km
+            span
+              strong= durationH + "h" + durationM + "m"
+              |  在云端
+          button.annual-next(type="button" data-report-next) 开始回顾 ↓
+
+      section.annual-report-slide.annual-time(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 01 · 时光
+          h2 一年 #{totals.flights} 次，#{dayKeys.length} 天在飞行
+          .annual-split-stats
+            article
+              span 飞行总里程
+              strong= totals.distanceKm.toLocaleString("en-US") + " km"
+              small 约等于沿赤道绕行 #{(totals.distanceKm / 40075).toFixed(2)} 圈
+            article
+              span 飞行总时长
+              strong= durationH + "h " + durationM + "min"
+              small 每一次都在两座城市之间穿行
+            article
+              span 最忙的一天
+              strong= busyDay.replace("-", " 月 ") + " 日"
+              small= "当天完成 " + y.dailyCounts[busyDay] + " 段飞行"
+          p.annual-quote 航程不是被压缩的时间，而是抵达另一处风景的开始。
+
+      section.annual-report-slide.annual-calendar(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 02 · 飞行日历
+          h2 #{dayKeys.length} 天在天空留下坐标
+          p.annual-caption 高亮日期表示当天至少完成一段飞行；深浅对应航段数量。
+          .annual-heatmap(role="img" aria-label=year + " 年逐日飞行热力图")
+            each monthName, mi in monthNames
+              .annual-heat-month
+                strong= monthName
+                .annual-heat-days
+                  - for (var day = 1; day <= monthDays[mi]; day++) {
+                    - var dateKey = ("0" + (mi + 1)).slice(-2) + "-" + ("0" + day).slice(-2)
+                    - var count = y.dailyCounts[dateKey] || 0
+                    span(class="heat-l" + Math.min(count, 3) title=(mi + 1) + " 月 " + day + " 日：" + count + " 段")
+                  - }
+          .annual-calendar-note
+            strong= firstDay.replace("-", " 月 ") + " 日"
+            span 年度首飞
+            strong= lastDay.replace("-", " 月 ") + " 日"
+            span 年度收官
+
+      section.annual-report-slide.annual-route(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 03 · 航迹
+          h2 从一座城市，抵达更多城市
+          .annual-map-panel
+            svg.annual-map-svg(viewBox="0 0 1000 500" role="img" aria-label=year + " 年飞行路线图")
+              g.annual-map-land(aria-hidden="true")
+                include ./travel-land.svg
+              g.annual-map-routes
+                each leg in y.mapLegs
+                  path(d=leg.d)
+              g.annual-map-nodes
+                each city, index in cities.slice(0, 8)
+                  - var cityAirport = Object.keys(t.airports).filter(function (iata) { return (cityNames[t.airports[iata].city] || t.airports[iata].city) === city.name })[0]
+                  if cityAirport
+                    - var ap = t.airports[cityAirport]
+                    - var px = (ap.lon + 180) / 360 * 1000
+                    - var py = (90 - ap.lat) / 180 * 500
+                    circle(cx=px cy=py r=index === 0 ? 7 : 5)
+          .annual-route-summary
+            article
+              strong= y.routes.length
+              span 条去重航线
+            article
+              strong= y.footprint.cities
+              span 座城市
+            article
+              strong= y.footprint.countries
+              span 个国家/地区
+
+      section.annual-report-slide.annual-cities(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 04 · 城市探索
+          h2 这一年，抵达过的城市
+          ol.annual-city-list
+            each city, index in cities.slice(0, 6)
+              li
+                span.annual-city-rank= "0" + (index + 1)
+                strong= city.name
+                small= city.flights + " 段航程相连"
+          p.annual-quote 每一次抵达，都让地图上的一个名字有了温度。
+
+      section.annual-report-slide.annual-pattern(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 05 · 飞行印记
+          h2 这一年的云端偏好
+          .annual-pattern-grid
+            article
+              span 最常飞航线
+              strong= y.routes[0] ? y.routes[0].from + " → " + y.routes[0].to : "—"
+              small= y.routes[0] ? y.routes[0].flights + " 次往返于同一条航迹" : "暂无数据"
+            article
+              span 最常搭乘航司
+              strong= airlines[0] ? airlines[0].name : "—"
+              small= airlines[0] ? airlines[0].flights + " 段飞行" : "暂无数据"
+            article
+              span 最常乘坐机型
+              strong= aircraft[0] ? aircraft[0].name : "—"
+              small= aircraft[0] ? aircraft[0].flights + " 段飞行" : "暂无数据"
+            article
+              span 已识别机型
+              strong= Object.keys(y.aircraft).length + " 种"
+              small= "共计 " + y.aircraftKnownFlights + " 段已识别"
+          p.annual-disclaimer 未包含座位、托运、准点率等当前数据源无法验证的行为标签。
+
+      section.annual-report-slide.annual-highlights(data-report-slide)
+        .annual-slide-inner
+          p.annual-kicker 06 · 高光时刻
+          h2 在路上的几个瞬间
+          .annual-highlights-grid
+            article
+              span 01
+              h3 年度首飞
+              p= firstDay.replace("-", " 月 ") + " 日，开启这一年的飞行章节。"
+            article
+              span 02
+              h3 最忙的一天
+              p= busyDay.replace("-", " 月 ") + " 日，单日完成 " + y.dailyCounts[busyDay] + " 段飞行。"
+            article
+              span 03
+              h3 年度收官
+              p= lastDay.replace("-", " 月 ") + " 日，把这一年的航迹落在终点。"
+          p.annual-quote 日历被点亮的那一刻，远方就不再只是一个名字。
+
+      section.annual-report-slide.annual-final(data-report-slide)
+        .annual-final-glow(aria-hidden="true")
+        .annual-slide-inner
+          p.annual-kicker 年度总结 · #{year}
+          h2 感谢这一年，每一次起飞与抵达
+          p.annual-final-copy #{totals.flights} 次飞行，#{totals.distanceKm.toLocaleString("en-US")} km，#{durationH} 小时 #{durationM} 分钟。<br>在云端看见更远的世界，也在每次落地后更靠近自己。
+          .annual-final-numbers
+            span
+              strong= y.footprint.cities
+              |  座城市
+            span
+              strong= y.footprint.routes
+              |  条航线
+            span
+              strong= y.footprint.airports
+              |  座机场
+          a.annual-return(href="/travel/") 返回我的飞行足迹
+  else
+    .annual-report-empty 年度报告数据尚未生成。
+  script(defer data-pjax src=url_for("/js/travel-report.js") + "?v=1")

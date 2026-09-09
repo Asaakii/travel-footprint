@@ -1,0 +1,52 @@
+:root {
+  color-scheme: dark;
+  background: #06111f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { background: #06111f; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #06111f;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 4.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(38, 56, 77, .8);
+  background: rgba(6, 17, 31, .92);
+  backdrop-filter: blur(10px);
+}
+
+.site-header a {
+  color: #dbe7f3;
+  font-size: 1.15rem;
+  font-weight: 760;
+  letter-spacing: .02em;
+  text-decoration: none;
+}
+
+.layout {
+  width: min(100%, 1330px);
+  margin: 0 auto;
+}
+
+.site-footer {
+  padding: 1.25rem;
+  color: #8fa2b7;
+  font-size: .875rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .site-header { min-height: 3.75rem; padding: 0 1rem; }
+}

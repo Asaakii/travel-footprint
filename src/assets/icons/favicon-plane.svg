@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="飞机">
+  <defs>
+    <linearGradient id="sky" x1="8" y1="6" x2="57" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4584ff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sky)"/>
+  <path fill="#fff" d="M54.6 28.1 37.2 24.6 27.4 10.9a3.7 3.7 0 0 0-5.2-.8 3.7 3.7 0 0 0-.8 5.2l6.4 9-12.1-2.4-5.3-5.8a3.7 3.7 0 0 0-5.2-.2 3.7 3.7 0 0 0-.2 5.2l4.1 4.6-4.1 4.6a3.7 3.7 0 0 0 .2 5.2 3.7 3.7 0 0 0 5.2-.2l5.3-5.8 12.1-2.4-6.4 9a3.7 3.7 0 0 0 .8 5.2 3.7 3.7 0 0 0 5.2-.8l9.8-13.7 17.4-3.5a3.7 3.7 0 0 0 0-7.2Z"/>
+  <path fill="#dbeafe" d="m30.8 27.5 4.7-.9 3.1 4.4-4.4.9z"/>
+</svg>

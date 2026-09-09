@@ -1,0 +1,121 @@
+//- 行程统计二级明细页（ continents / countries / cities / airports / routes ）
+//- 纯 SSR，数据来自脱敏聚合 JSON（site.data.travel），无敏感明细
+#travel
+  if site.data.travel
+    - var t = site.data.travel
+    - var detail = page.detail
+    - var contZh = { "Asia": "亚洲", "Europe": "欧洲", "Africa": "非洲", "North America": "北美洲", "South America": "南美洲", "Oceania": "大洋洲", "Antarctica": "南极洲" }
+    - var continentOrder = ["Asia", "Europe", "Africa", "North America", "South America", "Oceania", "Antarctica"]
+    - var continentEmoji = { "Asia": "🌏", "Europe": "🌍", "Africa": "🌍", "North America": "🌎", "South America": "🌎", "Oceania": "🌏", "Antarctica": "❄️" }
+    - var countryMeta = { "China": { name: "中国", flag: "🇨🇳" }, "Japan": { name: "日本", flag: "🇯🇵" }, "Malaysia": { name: "马来西亚", flag: "🇲🇾" }, "Indonesia": { name: "印尼", flag: "🇮🇩" }, "Vietnam": { name: "越南", flag: "🇻🇳" }, "Turkey": { name: "土耳其", flag: "🇹🇷" }, "Egypt": { name: "埃及", flag: "🇪🇬" } }
+    //- 城市以出发/到达航段数计数；同城多机场（成都双流 / 天府）合并展示
+    - var cityMeta = { "Beijing": "北京", "Chengdu": "成都", "Chengdu (Jianyang)": "成都", "Shanghai": "上海", "Changchun": "长春", "Dalian": "大连", "Guangzhou": "广州", "Fuzhou": "福州", "Xiamen": "厦门", "Dali": "大理", "Tianjin": "天津", "Tokyo": "东京", "Okinawa": "冲绳", "Osaka": "大阪", "Sapporo": "札幌", "Hakodate": "函馆", "Kuala Lumpur": "吉隆坡", "Tawau": "斗湖", "Kota Kinabalu": "亚庇", "Denpasar": "巴厘岛", "Ho Chi Minh City": "胡志明市", "Istanbul": "伊斯坦布尔", "Cairo": "开罗", "Aswan": "阿斯旺" }
+    - var airportMeta = { "PEK": "北京首都", "CTU": "成都双流", "CAI": "开罗国际", "ASW": "阿斯旺国际", "IST": "伊斯坦布尔", "PKX": "北京大兴", "PVG": "上海浦东", "TFU": "成都天府", "NRT": "东京成田", "OKA": "冲绳那霸", "HND": "东京羽田", "ITM": "大阪伊丹", "KIX": "大阪关西", "CGQ": "长春龙嘉", "DLC": "大连周水子", "CTS": "札幌新千岁", "HKD": "函馆", "KUL": "吉隆坡国际", "TWU": "斗湖", "BKI": "亚庇国际", "CAN": "广州白云", "FOC": "福州长乐", "XMN": "厦门高崎", "DPS": "巴厘岛伍拉·赖", "SGN": "胡志明市新山一", "DLU": "大理凤仪", "TSN": "天津滨海" }
+    - var apList = Object.keys(t.airports).map(function (k) { return t.airports[k] })
+    - var groupBy = function (arr, keyFn) { var m = {}; arr.forEach(function (a) { var k = keyFn(a); if (!m[k]) m[k] = []; m[k].push(a) }); return m }
+    - var countriesByContinent = {}; apList.forEach(function (a) { if (!countriesByContinent[a.continent]) countriesByContinent[a.continent] = {}; if (!countriesByContinent[a.continent][a.country]) countriesByContinent[a.continent][a.country] = { country: a.country, airports: 0, visits: 0 }; countriesByContinent[a.continent][a.country].airports += 1; countriesByContinent[a.continent][a.country].visits += a.visits }); continentOrder.forEach(function (cont) { countriesByContinent[cont] = Object.keys(countriesByContinent[cont] || {}).map(function (country) { return countriesByContinent[cont][country] }).sort(function (a, b) { return b.visits - a.visits || a.country.localeCompare(b.country) }) })
+
+    header.travel-top
+      .travel-brand
+        a.travel-detail-back(href="/travel/" aria-label="返回行程统计") ←
+        .travel-brand-text
+          .travel-brand-title= page.title
+          .travel-brand-sub 行程统计 · 明细
+
+    if detail === 'continents'
+      section.travel-card.travel-continent-overview
+        .travel-section-head
+          span.travel-section-title 七大洲足迹
+          span.travel-period-label= t.footprint.continents + " 个已到访"
+        .travel-continent-grid
+          each cont in continentOrder
+            - var countries = countriesByContinent[cont] || []
+            - var visits = countries.reduce(function (s, c) { return s + c.visits }, 0)
+            article.travel-continent-card(class=countries.length ? "is-visited" : "")
+              .travel-continent-mark= continentEmoji[cont]
+              .travel-continent-name= contZh[cont]
+              if countries.length
+                .travel-continent-meta= countries.length + " 个国家/地区 · " + visits + " 航段"
+              else
+                .travel-continent-meta 尚未解锁
+
+    if detail === 'countries'
+      each cont in continentOrder
+        - var countries = countriesByContinent[cont] || []
+        if countries.length
+          section.travel-card.travel-country-footprint
+            .travel-section-head
+              span.travel-section-title= contZh[cont] + "足迹"
+              span.travel-period-label= "共 " + countries.length + " 个"
+            .travel-country-grid
+              each country in countries
+                - var meta = countryMeta[country.country] || { name: country.country, flag: "🏳️" }
+                article.travel-country-card
+                  .travel-country-flag= meta.flag
+                  .travel-country-count.travel-num= country.visits
+                  .travel-country-name= meta.name
+                  .travel-country-meta= country.airports + " 座机场"
+
+    if detail === 'cities'
+      - var cityGroups = { domestic: {}, international: {} }
+      - apList.forEach(function (a) { var cityKey = a.country + "/" + (cityMeta[a.city] || a.city); var group = a.country === "China" ? cityGroups.domestic : cityGroups.international; if (!group[cityKey]) group[cityKey] = { name: cityMeta[a.city] || a.city, country: a.country, visits: 0, airports: [] }; group[cityKey].visits += a.visits; group[cityKey].airports.push(a.iata) })
+      each groupInfo in [{ key: "domestic", title: "国内城市", tone: "domestic" }, { key: "international", title: "国际城市", tone: "international" }]
+        - var cities = Object.keys(cityGroups[groupInfo.key]).map(function (k) { return cityGroups[groupInfo.key][k] }).sort(function (a, b) { return b.visits - a.visits || a.name.localeCompare(b.name, "zh-CN") })
+        if cities.length
+          section.travel-card.travel-city-footprint(class="is-" + groupInfo.tone)
+            .travel-section-head
+              span.travel-section-title= groupInfo.title
+              span.travel-period-label= "共 " + cities.length + " 个"
+            .travel-city-grid
+              each city in cities
+                article.travel-city-card
+                  .travel-city-orb= city.name
+                  .travel-city-count.travel-num= city.visits
+                  .travel-city-name= city.name
+                  .travel-city-meta= city.airports.join(" / ")
+
+    if detail === 'airports'
+      - var rankedAirports = apList.slice().sort(function (a, b) { return b.visits - a.visits || a.iata.localeCompare(b.iata) })
+      - var maxAirportVisits = rankedAirports.length ? rankedAirports[0].visits : 1
+      section.travel-card.travel-airport-ranking
+        .travel-airport-list
+          each a, index in rankedAirports
+            - var rank = index + 1
+            - var width = Math.max(10, Math.round(a.visits / maxAirportVisits * 100))
+            article.travel-airport-rank-row(class=rank <= 3 ? "is-top is-top-" + rank : "")
+              .travel-airport-rank-head
+                if rank <= 3
+                  span.travel-airport-top= "TOP" + rank
+                else
+                  span.travel-airport-plain-rank= rank
+                span.travel-airport-name= airportMeta[a.iata] || a.name
+              .travel-airport-rank-bar
+                .travel-airport-track
+                  .travel-airport-fill(style="width:" + width + "%")
+                span.travel-airport-count.travel-num= a.visits + "次"
+
+    if detail === 'routes'
+      //- 地图保留逐次有向航段，排行按城市和方向聚合；往返及同城多机场不会被误算
+      - var directedRouteMap = {}
+      - var rawLegs = (t.mapLegs && t.mapLegs.length) ? t.mapLegs : t.routes
+      - rawLegs.forEach(function (rt) { var fromAirport = t.airports[rt.from]; var toAirport = t.airports[rt.to]; var fromCity = cityMeta[fromAirport.city] || fromAirport.city; var toCity = cityMeta[toAirport.city] || toAirport.city; var key = fromAirport.country + "/" + fromCity + "-" + toAirport.country + "/" + toCity; if (!directedRouteMap[key]) directedRouteMap[key] = { fromCity: fromCity, toCity: toCity, flights: 0 }; directedRouteMap[key].flights += typeof rt.flights === "number" ? rt.flights : 1 })
+      - var rankedRoutes = Object.keys(directedRouteMap).map(function (k) { return directedRouteMap[k] }).sort(function (a, b) { return b.flights - a.flights || a.fromCity.localeCompare(b.fromCity, "zh-CN") || a.toCity.localeCompare(b.toCity, "zh-CN") })
+      - var maxRouteFlights = rankedRoutes.length ? rankedRoutes[0].flights : 1
+      section.travel-card.travel-route-ranking
+        .travel-route-list
+          each rt, index in rankedRoutes
+            - var rank = index + 1
+            - var width = Math.max(10, Math.round(rt.flights / maxRouteFlights * 100))
+            article.travel-route-rank-row(class=rank <= 3 ? "is-top is-top-" + rank : "")
+              .travel-route-rank-head
+                if rank <= 3
+                  span.travel-route-top= "TOP" + rank
+                else
+                  span.travel-route-plain-rank= rank
+                span.travel-route-name= rt.fromCity + "-" + rt.toCity
+              .travel-route-rank-bar
+                .travel-route-track
+                  .travel-route-fill(style="width:" + width + "%")
+                span.travel-route-count.travel-num= rt.flights + "次"
+  else
+    .travel-card.travel-empty 数据尚未生成，请先运行 npm run travel:import -- <csv路径>

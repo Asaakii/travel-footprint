@@ -1,0 +1,3099 @@
+{
+  "generatedAt": "2026-09-08T11:38:04.797Z",
+  "source": "OpenFlights 导出 CSV（本地导入，已脱敏预聚合）；机场元数据: OpenFlights airports.dat；缺失新机场兜底: OurAirports airports.csv/countries.csv",
+  "overall": {
+    "flights": 44,
+    "distanceKm": 92011,
+    "durationMin": 9016,
+    "aircraftKnownFlights": 44,
+    "aircraftUnknownFlights": 0
+  },
+  "years": {
+    "2023": {
+      "totals": {
+        "flights": 2,
+        "distanceKm": 3177,
+        "durationMin": 335
+      },
+      "dailyCounts": {
+        "09-26": 1,
+        "07-03": 1
+      },
+      "routes": [
+        {
+          "from": "CTU",
+          "to": "TSN",
+          "flights": 1,
+          "distanceKm": 1640,
+          "totalDistanceKm": 1640,
+          "d": "M 788.7 165.1 Q 811.7 159.9 826 141.3",
+          "arrows": [
+            {
+              "x": 809.5,
+              "y": 156.6,
+              "deg": -32.5
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "TSN",
+          "flights": 1,
+          "distanceKm": 1537,
+          "totalDistanceKm": 1537,
+          "d": "M 790.1 165.8 Q 803.5 147 826 141.3",
+          "arrows": [
+            {
+              "x": 805.8,
+              "y": 150.3,
+              "deg": -34.3
+            }
+          ]
+        }
+      ],
+      "mapLegs": [
+        {
+          "from": "TSN",
+          "to": "CTU",
+          "d": "M 826 141.3 Q 800.5 142.4 788.7 165.1",
+          "arrows": [
+            {
+              "x": 803.9,
+              "y": 147.8,
+              "deg": 147.5
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "TSN",
+          "d": "M 790.1 165.8 Q 806.2 150.9 826 141.3",
+          "arrows": [
+            {
+              "x": 807.1,
+              "y": 152.2,
+              "deg": -34.3
+            }
+          ]
+        }
+      ],
+      "airlines": {
+        "Air China": {
+          "flights": 1,
+          "distanceKm": 1640,
+          "durationMin": 180
+        },
+        "Sichuan Airlines": {
+          "flights": 1,
+          "distanceKm": 1537,
+          "durationMin": 155
+        }
+      },
+      "manufacturers": {
+        "Boeing": {
+          "flights": 1
+        },
+        "Airbus": {
+          "flights": 1
+        }
+      },
+      "aircraft": {
+        "737-89L(WL)": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A320-214": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        }
+      },
+      "aircraftKnownFlights": 2,
+      "aircraftUnknownFlights": 0,
+      "footprint": {
+        "continents": 1,
+        "countries": 1,
+        "cities": 3,
+        "airports": 3,
+        "routes": 2,
+        "continentList": [
+          "Asia"
+        ]
+      }
+    },
+    "2024": {
+      "totals": {
+        "flights": 8,
+        "distanceKm": 17883,
+        "durationMin": 1695
+      },
+      "dailyCounts": {
+        "09-07": 1,
+        "09-01": 1,
+        "07-05": 2,
+        "06-30": 2,
+        "03-20": 1,
+        "03-17": 1
+      },
+      "routes": [
+        {
+          "from": "DLU",
+          "to": "TFU",
+          "flights": 2,
+          "distanceKm": 975,
+          "totalDistanceKm": 1950,
+          "d": "M 778.7 178.8 Q 778.4 167 790.1 165.8",
+          "arrows": [
+            {
+              "x": 781.4,
+              "y": 169.6,
+              "deg": -48.5
+            }
+          ]
+        },
+        {
+          "from": "DPS",
+          "to": "KUL",
+          "flights": 1,
+          "distanceKm": 1985,
+          "totalDistanceKm": 1985,
+          "d": "M 819.9 274.3 Q 806.4 252.3 782.5 242.4",
+          "arrows": [
+            {
+              "x": 803.8,
+              "y": 255.3,
+              "deg": -139.5
+            }
+          ]
+        },
+        {
+          "from": "DPS",
+          "to": "SGN",
+          "flights": 1,
+          "distanceKm": 2373,
+          "totalDistanceKm": 2373,
+          "d": "M 819.9 274.3 Q 816.7 243.4 796.3 219.9",
+          "arrows": [
+            {
+              "x": 812.4,
+              "y": 245.2,
+              "deg": -113.5
+            }
+          ]
+        },
+        {
+          "from": "KIX",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 2923,
+          "totalDistanceKm": 2923,
+          "d": "M 875.7 154.4 Q 831.1 146.4 790.1 165.8",
+          "arrows": [
+            {
+              "x": 832,
+              "y": 153.2,
+              "deg": 172.4
+            }
+          ]
+        },
+        {
+          "from": "KUL",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 3082,
+          "totalDistanceKm": 3082,
+          "d": "M 782.5 242.4 Q 798.7 205.3 790.1 165.8",
+          "arrows": [
+            {
+              "x": 792.5,
+              "y": 204.7,
+              "deg": -84.3
+            }
+          ]
+        },
+        {
+          "from": "NRT",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 3388,
+          "totalDistanceKm": 3388,
+          "d": "M 890 150.7 Q 837.6 142.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 838.8,
+              "y": 150.2,
+              "deg": 171.4
+            }
+          ]
+        },
+        {
+          "from": "SGN",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 2182,
+          "totalDistanceKm": 2182,
+          "d": "M 796.3 219.9 Q 801.9 191.9 790.1 165.8",
+          "arrows": [
+            {
+              "x": 797.6,
+              "y": 192.4,
+              "deg": -96.5
+            }
+          ]
+        }
+      ],
+      "mapLegs": [
+        {
+          "from": "NRT",
+          "to": "TFU",
+          "d": "M 890 150.7 Q 837.6 142.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 838.8,
+              "y": 150.2,
+              "deg": 171.4
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "KIX",
+          "d": "M 790.1 165.8 Q 834.7 173.8 875.7 154.4",
+          "arrows": [
+            {
+              "x": 833.8,
+              "y": 166.9,
+              "deg": -7.6
+            }
+          ]
+        },
+        {
+          "from": "KUL",
+          "to": "TFU",
+          "d": "M 782.5 242.4 Q 798.7 205.3 790.1 165.8",
+          "arrows": [
+            {
+              "x": 792.5,
+              "y": 204.7,
+              "deg": -84.3
+            }
+          ]
+        },
+        {
+          "from": "DPS",
+          "to": "KUL",
+          "d": "M 819.9 274.3 Q 806.4 252.3 782.5 242.4",
+          "arrows": [
+            {
+              "x": 803.8,
+              "y": 255.3,
+              "deg": -139.5
+            }
+          ]
+        },
+        {
+          "from": "SGN",
+          "to": "DPS",
+          "d": "M 796.3 219.9 Q 799.5 250.9 819.9 274.3",
+          "arrows": [
+            {
+              "x": 803.8,
+              "y": 249,
+              "deg": 66.5
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "SGN",
+          "d": "M 790.1 165.8 Q 784.4 193.9 796.3 219.9",
+          "arrows": [
+            {
+              "x": 788.8,
+              "y": 193.4,
+              "deg": 83.5
+            }
+          ]
+        },
+        {
+          "from": "DLU",
+          "to": "TFU",
+          "d": "M 778.7 178.8 Q 779.7 168.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 782.1,
+              "y": 170.2,
+              "deg": -48.5
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "DLU",
+          "d": "M 790.1 165.8 Q 789 176.4 778.7 178.8",
+          "arrows": [
+            {
+              "x": 786.7,
+              "y": 174.3,
+              "deg": 131.5
+            }
+          ]
+        }
+      ],
+      "airlines": {
+        "Sichuan Airlines": {
+          "flights": 2,
+          "distanceKm": 6311,
+          "durationMin": 575
+        },
+        "Malindo Air": {
+          "flights": 2,
+          "distanceKm": 5067,
+          "durationMin": 475
+        },
+        "VietJet Air": {
+          "flights": 2,
+          "distanceKm": 4555,
+          "durationMin": 465
+        },
+        "Air China": {
+          "flights": 2,
+          "distanceKm": 1950,
+          "durationMin": 180
+        }
+      },
+      "manufacturers": {
+        "Airbus": {
+          "flights": 5
+        },
+        "Boeing": {
+          "flights": 3
+        }
+      },
+      "aircraft": {
+        "737": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A330-243": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A321-271NX": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "737 MAX 8": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A321NEO": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A320-200": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "737-79L(WL)": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "319-115": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        }
+      },
+      "aircraftKnownFlights": 8,
+      "aircraftUnknownFlights": 0,
+      "footprint": {
+        "continents": 1,
+        "countries": 5,
+        "cities": 7,
+        "airports": 7,
+        "routes": 7,
+        "continentList": [
+          "Asia"
+        ]
+      }
+    },
+    "2025": {
+      "totals": {
+        "flights": 13,
+        "distanceKm": 26725,
+        "durationMin": 2610
+      },
+      "dailyCounts": {
+        "11-24": 1,
+        "11-21": 1,
+        "09-22": 1,
+        "09-19": 1,
+        "06-29": 1,
+        "06-28": 1,
+        "06-24": 1,
+        "06-22": 2,
+        "04-13": 1,
+        "04-12": 1,
+        "04-06": 1,
+        "04-05": 1
+      },
+      "routes": [
+        {
+          "from": "CGQ",
+          "to": "TFU",
+          "flights": 4,
+          "distanceKm": 2630,
+          "totalDistanceKm": 10305,
+          "d": "M 849.1 127.8 Q 825.7 156.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 822.7,
+              "y": 151.5,
+              "deg": 147.2
+            }
+          ]
+        },
+        {
+          "from": "BKI",
+          "to": "TWU",
+          "flights": 1,
+          "distanceKm": 276,
+          "totalDistanceKm": 276,
+          "d": "M 822.4 233.5 Q 830.2 229.4 828.1 238",
+          "arrows": [
+            {
+              "x": 827.7,
+              "y": 232.6,
+              "deg": 37.9
+            }
+          ]
+        },
+        {
+          "from": "BKI",
+          "to": "CAN",
+          "flights": 1,
+          "distanceKm": 1940,
+          "totalDistanceKm": 1940,
+          "d": "M 822.4 233.5 Q 810.6 210.5 814.7 185",
+          "arrows": [
+            {
+              "x": 814.6,
+              "y": 209.9,
+              "deg": -99
+            }
+          ]
+        },
+        {
+          "from": "CAN",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 1390,
+          "totalDistanceKm": 1390,
+          "d": "M 814.7 185 Q 807.3 169.1 790.1 165.8",
+          "arrows": [
+            {
+              "x": 804.9,
+              "y": 172.3,
+              "deg": -142
+            }
+          ]
+        },
+        {
+          "from": "FOC",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 1771,
+          "totalDistanceKm": 1771,
+          "d": "M 832.4 178 Q 813.5 164.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 812.4,
+              "y": 168,
+              "deg": -164
+            }
+          ]
+        },
+        {
+          "from": "FOC",
+          "to": "NRT",
+          "flights": 1,
+          "distanceKm": 2255,
+          "totalDistanceKm": 2255,
+          "d": "M 832.4 178 Q 856.8 155.1 890 150.7",
+          "arrows": [
+            {
+              "x": 859,
+              "y": 159.7,
+              "deg": -25.4
+            }
+          ]
+        },
+        {
+          "from": "KIX",
+          "to": "XMN",
+          "flights": 1,
+          "distanceKm": 1985,
+          "totalDistanceKm": 1985,
+          "d": "M 875.7 154.4 Q 847.5 160.5 828.1 181.8",
+          "arrows": [
+            {
+              "x": 849.7,
+              "y": 164.3,
+              "deg": 150
+            }
+          ]
+        },
+        {
+          "from": "KUL",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 3082,
+          "totalDistanceKm": 3082,
+          "d": "M 782.5 242.4 Q 798.7 205.3 790.1 165.8",
+          "arrows": [
+            {
+              "x": 792.5,
+              "y": 204.7,
+              "deg": -84.3
+            }
+          ]
+        },
+        {
+          "from": "KUL",
+          "to": "TWU",
+          "flights": 1,
+          "distanceKm": 1810,
+          "totalDistanceKm": 1810,
+          "d": "M 782.5 242.4 Q 804.6 232.2 828.1 238",
+          "arrows": [
+            {
+              "x": 804.9,
+              "y": 236.2,
+              "deg": -5.5
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "XMN",
+          "flights": 1,
+          "distanceKm": 1911,
+          "totalDistanceKm": 1911,
+          "d": "M 790.1 165.8 Q 812.2 166.4 828.1 181.8",
+          "arrows": [
+            {
+              "x": 810.7,
+              "y": 170.1,
+              "deg": 22.9
+            }
+          ]
+        }
+      ],
+      "mapLegs": [
+        {
+          "from": "CGQ",
+          "to": "TFU",
+          "d": "M 849.1 127.8 Q 829.7 162.4 790.1 165.8",
+          "arrows": [
+            {
+              "x": 824.7,
+              "y": 154.6,
+              "deg": 147.2
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "CGQ",
+          "d": "M 790.1 165.8 Q 823 152 849.1 127.8",
+          "arrows": [
+            {
+              "x": 821.3,
+              "y": 149.4,
+              "deg": -32.8
+            }
+          ]
+        },
+        {
+          "from": "CGQ",
+          "to": "TFU",
+          "d": "M 849.1 127.8 Q 816.3 141.6 790.1 165.8",
+          "arrows": [
+            {
+              "x": 817.9,
+              "y": 144.2,
+              "deg": 147.2
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "CGQ",
+          "d": "M 790.1 165.8 Q 809.5 131.2 849.1 127.8",
+          "arrows": [
+            {
+              "x": 814.6,
+              "y": 139,
+              "deg": -32.8
+            }
+          ]
+        },
+        {
+          "from": "KUL",
+          "to": "TFU",
+          "d": "M 782.5 242.4 Q 798.7 205.3 790.1 165.8",
+          "arrows": [
+            {
+              "x": 792.5,
+              "y": 204.7,
+              "deg": -84.3
+            }
+          ]
+        },
+        {
+          "from": "TWU",
+          "to": "KUL",
+          "d": "M 828.1 238 Q 806.1 248.1 782.5 242.4",
+          "arrows": [
+            {
+              "x": 805.7,
+              "y": 244.2,
+              "deg": 174.5
+            }
+          ]
+        },
+        {
+          "from": "BKI",
+          "to": "TWU",
+          "d": "M 822.4 233.5 Q 830.2 229.4 828.1 238",
+          "arrows": [
+            {
+              "x": 827.7,
+              "y": 232.6,
+              "deg": 37.9
+            }
+          ]
+        },
+        {
+          "from": "CAN",
+          "to": "BKI",
+          "d": "M 814.7 185 Q 826.4 208 822.4 233.5",
+          "arrows": [
+            {
+              "x": 822.5,
+              "y": 208.6,
+              "deg": 81
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "CAN",
+          "d": "M 790.1 165.8 Q 797.5 181.7 814.7 185",
+          "arrows": [
+            {
+              "x": 800,
+              "y": 178.6,
+              "deg": 38
+            }
+          ]
+        },
+        {
+          "from": "FOC",
+          "to": "TFU",
+          "d": "M 832.4 178 Q 814.2 161.7 790.1 165.8",
+          "arrows": [
+            {
+              "x": 812.7,
+              "y": 166.8,
+              "deg": -164
+            }
+          ]
+        },
+        {
+          "from": "NRT",
+          "to": "FOC",
+          "d": "M 890 150.7 Q 865.6 173.5 832.4 178",
+          "arrows": [
+            {
+              "x": 863.4,
+              "y": 168.9,
+              "deg": 154.6
+            }
+          ]
+        },
+        {
+          "from": "XMN",
+          "to": "KIX",
+          "d": "M 828.1 181.8 Q 856.3 175.7 875.7 154.4",
+          "arrows": [
+            {
+              "x": 854.1,
+              "y": 171.9,
+              "deg": -30
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "XMN",
+          "d": "M 790.1 165.8 Q 811.1 169 828.1 181.8",
+          "arrows": [
+            {
+              "x": 810.1,
+              "y": 171.4,
+              "deg": 22.9
+            }
+          ]
+        }
+      ],
+      "airlines": {
+        "Air China": {
+          "flights": 1,
+          "distanceKm": 2630,
+          "durationMin": 270
+        },
+        "China Southern Airlines": {
+          "flights": 5,
+          "distanceKm": 11005,
+          "durationMin": 1080
+        },
+        "Sichuan Airlines": {
+          "flights": 1,
+          "distanceKm": 3082,
+          "durationMin": 270
+        },
+        "Malindo Air": {
+          "flights": 1,
+          "distanceKm": 1810,
+          "durationMin": 175
+        },
+        "AirAsia": {
+          "flights": 1,
+          "distanceKm": 276,
+          "durationMin": 50
+        },
+        "Xiamen Airlines": {
+          "flights": 4,
+          "distanceKm": 7922,
+          "durationMin": 765
+        }
+      },
+      "manufacturers": {
+        "Airbus": {
+          "flights": 8
+        },
+        "Boeing": {
+          "flights": 4
+        },
+        "COMAC": {
+          "flights": 1
+        }
+      },
+      "aircraft": {
+        "321-213": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A320-232": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "320-251N": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A320-251N": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A321-271N": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "737-86N": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A320-216": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "321-253NX": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "C919": {
+          "manufacturer": "COMAC",
+          "flights": 1
+        },
+        "737-85C": {
+          "manufacturer": "Boeing",
+          "flights": 2
+        },
+        "737-800": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "321-251NX": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        }
+      },
+      "aircraftKnownFlights": 13,
+      "aircraftUnknownFlights": 0,
+      "footprint": {
+        "continents": 1,
+        "countries": 3,
+        "cities": 10,
+        "airports": 10,
+        "routes": 10,
+        "continentList": [
+          "Asia"
+        ]
+      }
+    },
+    "2026": {
+      "totals": {
+        "flights": 21,
+        "distanceKm": 44226,
+        "durationMin": 4376
+      },
+      "dailyCounts": {
+        "08-31": 1,
+        "08-30": 1,
+        "08-24": 1,
+        "08-23": 1,
+        "08-20": 1,
+        "08-19": 1,
+        "07-10": 2,
+        "07-08": 1,
+        "07-06": 1,
+        "07-02": 2,
+        "03-23": 1,
+        "03-20": 1,
+        "01-25": 2,
+        "01-24": 2,
+        "01-19": 1,
+        "01-18": 1,
+        "01-06": 1
+      },
+      "routes": [
+        {
+          "from": "CGQ",
+          "to": "TFU",
+          "flights": 2,
+          "distanceKm": 2630,
+          "totalDistanceKm": 5045,
+          "d": "M 849.1 127.8 Q 825.7 156.2 790.1 165.8",
+          "arrows": [
+            {
+              "x": 822.7,
+              "y": 151.5,
+              "deg": 147.2
+            }
+          ]
+        },
+        {
+          "from": "CTS",
+          "to": "HND",
+          "flights": 2,
+          "distanceKm": 820,
+          "totalDistanceKm": 1640,
+          "d": "M 893.6 131.2 Q 898.7 143.3 888.3 151.2",
+          "arrows": [
+            {
+              "x": 894.8,
+              "y": 142.2,
+              "deg": 104.8
+            }
+          ]
+        },
+        {
+          "from": "DLC",
+          "to": "NRT",
+          "flights": 2,
+          "distanceKm": 1701,
+          "totalDistanceKm": 3377,
+          "d": "M 837.6 141.8 Q 862.4 154.5 890 150.7",
+          "arrows": [
+            {
+              "x": 863.1,
+              "y": 150.3,
+              "deg": 9.6
+            }
+          ]
+        },
+        {
+          "from": "PVG",
+          "to": "TFU",
+          "flights": 2,
+          "distanceKm": 1782,
+          "totalDistanceKm": 3564,
+          "d": "M 838.3 163.5 Q 814.6 172.6 790.1 165.8",
+          "arrows": [
+            {
+              "x": 814.4,
+              "y": 168.6,
+              "deg": 177.3
+            }
+          ]
+        },
+        {
+          "from": "ASW",
+          "to": "CAI",
+          "flights": 1,
+          "distanceKm": 698,
+          "totalDistanceKm": 698,
+          "d": "M 591.2 183.4 Q 581.4 176.7 587.2 166.3",
+          "arrows": [
+            {
+              "x": 585.3,
+              "y": 175.8,
+              "deg": -102.9
+            }
+          ]
+        },
+        {
+          "from": "CAI",
+          "to": "PEK",
+          "flights": 1,
+          "distanceKm": 7534,
+          "totalDistanceKm": 7534,
+          "d": "M 587.2 166.3 Q 709.7 188.3 823.8 138.7",
+          "arrows": [
+            {
+              "x": 707.6,
+              "y": 170.4,
+              "deg": -6.7
+            }
+          ]
+        },
+        {
+          "from": "CAI",
+          "to": "IST",
+          "flights": 1,
+          "distanceKm": 1221,
+          "totalDistanceKm": 1221,
+          "d": "M 587.2 166.3 Q 591.3 149 579.9 135.3",
+          "arrows": [
+            {
+              "x": 587.4,
+              "y": 149.9,
+              "deg": -103.4
+            }
+          ]
+        },
+        {
+          "from": "CGQ",
+          "to": "CTU",
+          "flights": 1,
+          "distanceKm": 2630,
+          "totalDistanceKm": 2630,
+          "d": "M 849.1 127.8 Q 812.9 136.7 788.7 165.1",
+          "arrows": [
+            {
+              "x": 815.9,
+              "y": 141.6,
+              "deg": 148.3
+            }
+          ]
+        },
+        {
+          "from": "CTS",
+          "to": "HKD",
+          "flights": 1,
+          "distanceKm": 144,
+          "totalDistanceKm": 144,
+          "d": "M 893.6 131.2 Q 886.3 127.3 891.2 134",
+          "arrows": [
+            {
+              "x": 889.4,
+              "y": 130,
+              "deg": 130.9
+            }
+          ]
+        },
+        {
+          "from": "CTU",
+          "to": "PEK",
+          "flights": 1,
+          "distanceKm": 1697,
+          "totalDistanceKm": 1697,
+          "d": "M 788.7 165.1 Q 801.5 145.5 823.8 138.7",
+          "arrows": [
+            {
+              "x": 803.9,
+              "y": 148.7,
+              "deg": -36.9
+            }
+          ]
+        },
+        {
+          "from": "CTU",
+          "to": "PKX",
+          "flights": 1,
+          "distanceKm": 1697,
+          "totalDistanceKm": 1697,
+          "d": "M 788.7 165.1 Q 810.7 159.2 823.4 140.3",
+          "arrows": [
+            {
+              "x": 808.4,
+              "y": 155.9,
+              "deg": -35.6
+            }
+          ]
+        },
+        {
+          "from": "DLC",
+          "to": "TFU",
+          "flights": 1,
+          "distanceKm": 1989,
+          "totalDistanceKm": 1989,
+          "d": "M 837.6 141.8 Q 817.7 161.5 790.1 165.8",
+          "arrows": [
+            {
+              "x": 815.8,
+              "y": 157.6,
+              "deg": 153.2
+            }
+          ]
+        },
+        {
+          "from": "HND",
+          "to": "OKA",
+          "flights": 1,
+          "distanceKm": 1583,
+          "totalDistanceKm": 1583,
+          "d": "M 888.3 151.2 Q 866.5 157.9 854.6 177.2",
+          "arrows": [
+            {
+              "x": 869,
+              "y": 161.1,
+              "deg": 142.4
+            }
+          ]
+        },
+        {
+          "from": "IST",
+          "to": "PKX",
+          "flights": 1,
+          "distanceKm": 7089,
+          "totalDistanceKm": 7089,
+          "d": "M 579.9 135.3 Q 700.9 173.8 823.4 140.3",
+          "arrows": [
+            {
+              "x": 701.3,
+              "y": 155.8,
+              "deg": 1.2
+            }
+          ]
+        },
+        {
+          "from": "ITM",
+          "to": "OKA",
+          "flights": 1,
+          "distanceKm": 1213,
+          "totalDistanceKm": 1213,
+          "d": "M 876.2 153.4 Q 859.5 159.9 854.6 177.2",
+          "arrows": [
+            {
+              "x": 862.4,
+              "y": 162.6,
+              "deg": 132.2
+            }
+          ]
+        },
+        {
+          "from": "KIX",
+          "to": "PVG",
+          "flights": 1,
+          "distanceKm": 1308,
+          "totalDistanceKm": 1308,
+          "d": "M 875.7 154.4 Q 855.1 151.2 838.3 163.5",
+          "arrows": [
+            {
+              "x": 856.1,
+              "y": 155,
+              "deg": 166.3
+            }
+          ]
+        },
+        {
+          "from": "NRT",
+          "to": "PVG",
+          "flights": 1,
+          "distanceKm": 1797,
+          "totalDistanceKm": 1797,
+          "d": "M 890 150.7 Q 862.1 148.7 838.3 163.5",
+          "arrows": [
+            {
+              "x": 863.1,
+              "y": 152.9,
+              "deg": 166
+            }
+          ]
+        }
+      ],
+      "mapLegs": [
+        {
+          "from": "PEK",
+          "to": "CTU",
+          "d": "M 823.8 138.7 Q 808.2 154.4 788.7 165.1",
+          "arrows": [
+            {
+              "x": 807.3,
+              "y": 153.1,
+              "deg": 143.1
+            }
+          ]
+        },
+        {
+          "from": "CAI",
+          "to": "PEK",
+          "d": "M 587.2 166.3 Q 709.7 188.3 823.8 138.7",
+          "arrows": [
+            {
+              "x": 707.6,
+              "y": 170.4,
+              "deg": -6.7
+            }
+          ]
+        },
+        {
+          "from": "CAI",
+          "to": "ASW",
+          "d": "M 587.2 166.3 Q 597 173.1 591.2 183.4",
+          "arrows": [
+            {
+              "x": 593.1,
+              "y": 174,
+              "deg": 77.1
+            }
+          ]
+        },
+        {
+          "from": "IST",
+          "to": "CAI",
+          "d": "M 579.9 135.3 Q 575.8 152.7 587.2 166.3",
+          "arrows": [
+            {
+              "x": 579.7,
+              "y": 151.8,
+              "deg": 76.6
+            }
+          ]
+        },
+        {
+          "from": "PKX",
+          "to": "IST",
+          "d": "M 823.4 140.3 Q 702.3 101.8 579.9 135.3",
+          "arrows": [
+            {
+              "x": 702,
+              "y": 119.8,
+              "deg": -178.8
+            }
+          ]
+        },
+        {
+          "from": "CTU",
+          "to": "PKX",
+          "d": "M 788.7 165.1 Q 813.5 163.1 823.4 140.3",
+          "arrows": [
+            {
+              "x": 809.8,
+              "y": 157.9,
+              "deg": -35.6
+            }
+          ]
+        },
+        {
+          "from": "PVG",
+          "to": "TFU",
+          "d": "M 838.3 163.5 Q 814.5 170.8 790.1 165.8",
+          "arrows": [
+            {
+              "x": 814.4,
+              "y": 167.7,
+              "deg": 177.3
+            }
+          ]
+        },
+        {
+          "from": "NRT",
+          "to": "PVG",
+          "d": "M 890 150.7 Q 862.5 150.5 838.3 163.5",
+          "arrows": [
+            {
+              "x": 863.3,
+              "y": 153.8,
+              "deg": 166
+            }
+          ]
+        },
+        {
+          "from": "OKA",
+          "to": "HND",
+          "d": "M 854.6 177.2 Q 876.3 170.6 888.3 151.2",
+          "arrows": [
+            {
+              "x": 873.9,
+              "y": 167.4,
+              "deg": -37.6
+            }
+          ]
+        },
+        {
+          "from": "ITM",
+          "to": "OKA",
+          "d": "M 876.2 153.4 Q 859.5 159.9 854.6 177.2",
+          "arrows": [
+            {
+              "x": 862.4,
+              "y": 162.6,
+              "deg": 132.2
+            }
+          ]
+        },
+        {
+          "from": "PVG",
+          "to": "KIX",
+          "d": "M 838.3 163.5 Q 858.9 166.7 875.7 154.4",
+          "arrows": [
+            {
+              "x": 858,
+              "y": 162.8,
+              "deg": -13.7
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "PVG",
+          "d": "M 790.1 165.8 Q 814 160 838.3 163.5",
+          "arrows": [
+            {
+              "x": 814.1,
+              "y": 162.3,
+              "deg": -2.7
+            }
+          ]
+        },
+        {
+          "from": "CGQ",
+          "to": "CTU",
+          "d": "M 849.1 127.8 Q 811.8 134.9 788.7 165.1",
+          "arrows": [
+            {
+              "x": 815.4,
+              "y": 140.6,
+              "deg": 148.3
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "CGQ",
+          "d": "M 790.1 165.8 Q 823.2 152.3 849.1 127.8",
+          "arrows": [
+            {
+              "x": 821.4,
+              "y": 149.6,
+              "deg": -32.8
+            }
+          ]
+        },
+        {
+          "from": "DLC",
+          "to": "TFU",
+          "d": "M 837.6 141.8 Q 817.3 160.6 790.1 165.8",
+          "arrows": [
+            {
+              "x": 815.6,
+              "y": 157.2,
+              "deg": 153.2
+            }
+          ]
+        },
+        {
+          "from": "NRT",
+          "to": "DLC",
+          "d": "M 890 150.7 Q 864.8 140.1 837.6 141.8",
+          "arrows": [
+            {
+              "x": 864.3,
+              "y": 143.2,
+              "deg": -170.4
+            }
+          ]
+        },
+        {
+          "from": "CTS",
+          "to": "HND",
+          "d": "M 893.6 131.2 Q 896.9 142.8 888.3 151.2",
+          "arrows": [
+            {
+              "x": 893.9,
+              "y": 142,
+              "deg": 104.8
+            }
+          ]
+        },
+        {
+          "from": "HKD",
+          "to": "CTS",
+          "d": "M 891.2 134 Q 898.4 137.8 893.6 131.2",
+          "arrows": [
+            {
+              "x": 895.4,
+              "y": 135.2,
+              "deg": -49.1
+            }
+          ]
+        },
+        {
+          "from": "HND",
+          "to": "CTS",
+          "d": "M 888.3 151.2 Q 884.9 139.6 893.6 131.2",
+          "arrows": [
+            {
+              "x": 887.9,
+              "y": 140.4,
+              "deg": -75.2
+            }
+          ]
+        },
+        {
+          "from": "DLC",
+          "to": "NRT",
+          "d": "M 837.6 141.8 Q 863 150.5 890 150.7",
+          "arrows": [
+            {
+              "x": 863.4,
+              "y": 148.4,
+              "deg": 9.6
+            }
+          ]
+        },
+        {
+          "from": "TFU",
+          "to": "CGQ",
+          "d": "M 790.1 165.8 Q 817.2 143.1 849.1 127.8",
+          "arrows": [
+            {
+              "x": 818.4,
+              "y": 144.9,
+              "deg": -32.8
+            }
+          ]
+        }
+      ],
+      "airlines": {
+        "Air China": {
+          "flights": 3,
+          "distanceKm": 11861,
+          "durationMin": 956
+        },
+        "Egyptair": {
+          "flights": 1,
+          "distanceKm": 698,
+          "durationMin": 80
+        },
+        "Air Cairo": {
+          "flights": 1,
+          "distanceKm": 1221,
+          "durationMin": 125
+        },
+        "China Southern Airlines": {
+          "flights": 3,
+          "distanceKm": 11201,
+          "durationMin": 1010
+        },
+        "Shanghai Airlines": {
+          "flights": 1,
+          "distanceKm": 1782,
+          "durationMin": 205
+        },
+        "China Eastern Airlines": {
+          "flights": 3,
+          "distanceKm": 4887,
+          "durationMin": 545
+        },
+        "All Nippon Airways": {
+          "flights": 7,
+          "distanceKm": 7957,
+          "durationMin": 890
+        },
+        "Sichuan Airlines": {
+          "flights": 1,
+          "distanceKm": 2630,
+          "durationMin": 255
+        },
+        "Loong Air": {
+          "flights": 1,
+          "distanceKm": 1989,
+          "durationMin": 310
+        }
+      },
+      "manufacturers": {
+        "Boeing": {
+          "flights": 10
+        },
+        "Airbus": {
+          "flights": 10
+        },
+        "De Havilland": {
+          "flights": 1
+        }
+      },
+      "aircraft": {
+        "737-89L(WL)": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A330-343X": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "737-866": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A320-214": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "787-9": {
+          "manufacturer": "Boeing",
+          "flights": 2
+        },
+        "A350-941": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "737 MAX 8": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "321-251NX": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "787-10": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "A330-243": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "320-232": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "321-231": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "A320-271N": {
+          "manufacturer": "Airbus",
+          "flights": 1
+        },
+        "320-251N": {
+          "manufacturer": "Airbus",
+          "flights": 2
+        },
+        "787-8": {
+          "manufacturer": "Boeing",
+          "flights": 2
+        },
+        "777-281/ER": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        },
+        "DHC-8-400": {
+          "manufacturer": "De Havilland",
+          "flights": 1
+        },
+        "777-281(ER)": {
+          "manufacturer": "Boeing",
+          "flights": 1
+        }
+      },
+      "aircraftKnownFlights": 21,
+      "aircraftUnknownFlights": 0,
+      "footprint": {
+        "continents": 3,
+        "countries": 4,
+        "cities": 14,
+        "airports": 17,
+        "routes": 17,
+        "continentList": [
+          "Africa",
+          "Asia",
+          "Europe"
+        ]
+      }
+    }
+  },
+  "airports": {
+    "PEK": {
+      "iata": "PEK",
+      "name": "Beijing Capital International Airport",
+      "city": "Beijing",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 40.0801,
+      "lon": 116.585,
+      "visits": 2
+    },
+    "CTU": {
+      "iata": "CTU",
+      "name": "Chengdu Shuangliu International Airport",
+      "city": "Chengdu",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 30.5785,
+      "lon": 103.947,
+      "visits": 4
+    },
+    "CAI": {
+      "iata": "CAI",
+      "name": "Cairo International Airport",
+      "city": "Cairo",
+      "country": "Egypt",
+      "continent": "Africa",
+      "lat": 30.1219,
+      "lon": 31.4056,
+      "visits": 3
+    },
+    "ASW": {
+      "iata": "ASW",
+      "name": "Aswan International Airport",
+      "city": "Aswan",
+      "country": "Egypt",
+      "continent": "Africa",
+      "lat": 23.9644,
+      "lon": 32.82,
+      "visits": 1
+    },
+    "IST": {
+      "iata": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "continent": "Europe",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "visits": 2
+    },
+    "PKX": {
+      "iata": "PKX",
+      "name": "Beijing Daxing International Airport",
+      "city": "Beijing",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 39.5099,
+      "lon": 116.4109,
+      "visits": 2
+    },
+    "PVG": {
+      "iata": "PVG",
+      "name": "Shanghai Pudong International Airport",
+      "city": "Shanghai",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 31.1434,
+      "lon": 121.805,
+      "visits": 4
+    },
+    "TFU": {
+      "iata": "TFU",
+      "name": "Chengdu Tianfu International Airport",
+      "city": "Chengdu (Jianyang)",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 30.3125,
+      "lon": 104.4413,
+      "visits": 20
+    },
+    "NRT": {
+      "iata": "NRT",
+      "name": "Narita International Airport",
+      "city": "Tokyo",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 35.7647,
+      "lon": 140.386,
+      "visits": 5
+    },
+    "OKA": {
+      "iata": "OKA",
+      "name": "Naha Airport",
+      "city": "Okinawa",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 26.1958,
+      "lon": 127.646,
+      "visits": 2
+    },
+    "HND": {
+      "iata": "HND",
+      "name": "Tokyo Haneda International Airport",
+      "city": "Tokyo",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 35.5523,
+      "lon": 139.78,
+      "visits": 3
+    },
+    "ITM": {
+      "iata": "ITM",
+      "name": "Osaka International Airport",
+      "city": "Osaka",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 34.7855,
+      "lon": 135.438,
+      "visits": 1
+    },
+    "KIX": {
+      "iata": "KIX",
+      "name": "Kansai International Airport",
+      "city": "Osaka",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 34.4273,
+      "lon": 135.244,
+      "visits": 3
+    },
+    "CGQ": {
+      "iata": "CGQ",
+      "name": "Longjia Airport",
+      "city": "Changchun",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 43.9962,
+      "lon": 125.685,
+      "visits": 7
+    },
+    "DLC": {
+      "iata": "DLC",
+      "name": "Zhoushuizi Airport",
+      "city": "Dalian",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 38.9657,
+      "lon": 121.539,
+      "visits": 3
+    },
+    "CTS": {
+      "iata": "CTS",
+      "name": "New Chitose Airport",
+      "city": "Sapporo",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 42.7752,
+      "lon": 141.692,
+      "visits": 3
+    },
+    "HKD": {
+      "iata": "HKD",
+      "name": "Hakodate Airport",
+      "city": "Hakodate",
+      "country": "Japan",
+      "continent": "Asia",
+      "lat": 41.77,
+      "lon": 140.822,
+      "visits": 1
+    },
+    "KUL": {
+      "iata": "KUL",
+      "name": "Kuala Lumpur International Airport",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "continent": "Asia",
+      "lat": 2.7456,
+      "lon": 101.71,
+      "visits": 4
+    },
+    "TWU": {
+      "iata": "TWU",
+      "name": "Tawau Airport",
+      "city": "Tawau",
+      "country": "Malaysia",
+      "continent": "Asia",
+      "lat": 4.3202,
+      "lon": 118.128,
+      "visits": 2
+    },
+    "BKI": {
+      "iata": "BKI",
+      "name": "Kota Kinabalu International Airport",
+      "city": "Kota Kinabalu",
+      "country": "Malaysia",
+      "continent": "Asia",
+      "lat": 5.9372,
+      "lon": 116.051,
+      "visits": 2
+    },
+    "CAN": {
+      "iata": "CAN",
+      "name": "Guangzhou Baiyun International Airport",
+      "city": "Guangzhou",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 23.3924,
+      "lon": 113.299,
+      "visits": 2
+    },
+    "FOC": {
+      "iata": "FOC",
+      "name": "Fuzhou Changle International Airport",
+      "city": "Fuzhou",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 25.9351,
+      "lon": 119.663,
+      "visits": 2
+    },
+    "XMN": {
+      "iata": "XMN",
+      "name": "Xiamen Gaoqi International Airport",
+      "city": "Xiamen",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 24.544,
+      "lon": 118.128,
+      "visits": 2
+    },
+    "DPS": {
+      "iata": "DPS",
+      "name": "Ngurah Rai (Bali) International Airport",
+      "city": "Denpasar",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "lat": -8.7482,
+      "lon": 115.167,
+      "visits": 2
+    },
+    "SGN": {
+      "iata": "SGN",
+      "name": "Tan Son Nhat International Airport",
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "continent": "Asia",
+      "lat": 10.8188,
+      "lon": 106.652,
+      "visits": 2
+    },
+    "DLU": {
+      "iata": "DLU",
+      "name": "Dali Airport",
+      "city": "Dali",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 25.6494,
+      "lon": 100.319,
+      "visits": 2
+    },
+    "TSN": {
+      "iata": "TSN",
+      "name": "Tianjin Binhai International Airport",
+      "city": "Tianjin",
+      "country": "China",
+      "continent": "Asia",
+      "lat": 39.1244,
+      "lon": 117.346,
+      "visits": 2
+    }
+  },
+  "routes": [
+    {
+      "from": "CGQ",
+      "to": "TFU",
+      "flights": 6,
+      "distanceKm": 2630,
+      "totalDistanceKm": 15350,
+      "d": "M 849.1 127.8 Q 825.7 156.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 822.7,
+          "y": 151.5,
+          "deg": 147.2
+        }
+      ]
+    },
+    {
+      "from": "CTS",
+      "to": "HND",
+      "flights": 2,
+      "distanceKm": 820,
+      "totalDistanceKm": 1640,
+      "d": "M 893.6 131.2 Q 898.7 143.3 888.3 151.2",
+      "arrows": [
+        {
+          "x": 894.8,
+          "y": 142.2,
+          "deg": 104.8
+        }
+      ]
+    },
+    {
+      "from": "DLC",
+      "to": "NRT",
+      "flights": 2,
+      "distanceKm": 1701,
+      "totalDistanceKm": 3377,
+      "d": "M 837.6 141.8 Q 862.4 154.5 890 150.7",
+      "arrows": [
+        {
+          "x": 863.1,
+          "y": 150.3,
+          "deg": 9.6
+        }
+      ]
+    },
+    {
+      "from": "DLU",
+      "to": "TFU",
+      "flights": 2,
+      "distanceKm": 975,
+      "totalDistanceKm": 1950,
+      "d": "M 778.7 178.8 Q 778.4 167 790.1 165.8",
+      "arrows": [
+        {
+          "x": 781.4,
+          "y": 169.6,
+          "deg": -48.5
+        }
+      ]
+    },
+    {
+      "from": "KUL",
+      "to": "TFU",
+      "flights": 2,
+      "distanceKm": 3082,
+      "totalDistanceKm": 6164,
+      "d": "M 782.5 242.4 Q 798.7 205.3 790.1 165.8",
+      "arrows": [
+        {
+          "x": 792.5,
+          "y": 204.7,
+          "deg": -84.3
+        }
+      ]
+    },
+    {
+      "from": "PVG",
+      "to": "TFU",
+      "flights": 2,
+      "distanceKm": 1782,
+      "totalDistanceKm": 3564,
+      "d": "M 838.3 163.5 Q 814.6 172.6 790.1 165.8",
+      "arrows": [
+        {
+          "x": 814.4,
+          "y": 168.6,
+          "deg": 177.3
+        }
+      ]
+    },
+    {
+      "from": "ASW",
+      "to": "CAI",
+      "flights": 1,
+      "distanceKm": 698,
+      "totalDistanceKm": 698,
+      "d": "M 591.2 183.4 Q 581.4 176.7 587.2 166.3",
+      "arrows": [
+        {
+          "x": 585.3,
+          "y": 175.8,
+          "deg": -102.9
+        }
+      ]
+    },
+    {
+      "from": "BKI",
+      "to": "TWU",
+      "flights": 1,
+      "distanceKm": 276,
+      "totalDistanceKm": 276,
+      "d": "M 822.4 233.5 Q 830.2 229.4 828.1 238",
+      "arrows": [
+        {
+          "x": 827.7,
+          "y": 232.6,
+          "deg": 37.9
+        }
+      ]
+    },
+    {
+      "from": "BKI",
+      "to": "CAN",
+      "flights": 1,
+      "distanceKm": 1940,
+      "totalDistanceKm": 1940,
+      "d": "M 822.4 233.5 Q 810.6 210.5 814.7 185",
+      "arrows": [
+        {
+          "x": 814.6,
+          "y": 209.9,
+          "deg": -99
+        }
+      ]
+    },
+    {
+      "from": "CAI",
+      "to": "PEK",
+      "flights": 1,
+      "distanceKm": 7534,
+      "totalDistanceKm": 7534,
+      "d": "M 587.2 166.3 Q 709.7 188.3 823.8 138.7",
+      "arrows": [
+        {
+          "x": 707.6,
+          "y": 170.4,
+          "deg": -6.7
+        }
+      ]
+    },
+    {
+      "from": "CAI",
+      "to": "IST",
+      "flights": 1,
+      "distanceKm": 1221,
+      "totalDistanceKm": 1221,
+      "d": "M 587.2 166.3 Q 591.3 149 579.9 135.3",
+      "arrows": [
+        {
+          "x": 587.4,
+          "y": 149.9,
+          "deg": -103.4
+        }
+      ]
+    },
+    {
+      "from": "CAN",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 1390,
+      "totalDistanceKm": 1390,
+      "d": "M 814.7 185 Q 807.3 169.1 790.1 165.8",
+      "arrows": [
+        {
+          "x": 804.9,
+          "y": 172.3,
+          "deg": -142
+        }
+      ]
+    },
+    {
+      "from": "CGQ",
+      "to": "CTU",
+      "flights": 1,
+      "distanceKm": 2630,
+      "totalDistanceKm": 2630,
+      "d": "M 849.1 127.8 Q 812.9 136.7 788.7 165.1",
+      "arrows": [
+        {
+          "x": 815.9,
+          "y": 141.6,
+          "deg": 148.3
+        }
+      ]
+    },
+    {
+      "from": "CTS",
+      "to": "HKD",
+      "flights": 1,
+      "distanceKm": 144,
+      "totalDistanceKm": 144,
+      "d": "M 893.6 131.2 Q 886.3 127.3 891.2 134",
+      "arrows": [
+        {
+          "x": 889.4,
+          "y": 130,
+          "deg": 130.9
+        }
+      ]
+    },
+    {
+      "from": "CTU",
+      "to": "PEK",
+      "flights": 1,
+      "distanceKm": 1697,
+      "totalDistanceKm": 1697,
+      "d": "M 788.7 165.1 Q 801.5 145.5 823.8 138.7",
+      "arrows": [
+        {
+          "x": 803.9,
+          "y": 148.7,
+          "deg": -36.9
+        }
+      ]
+    },
+    {
+      "from": "CTU",
+      "to": "PKX",
+      "flights": 1,
+      "distanceKm": 1697,
+      "totalDistanceKm": 1697,
+      "d": "M 788.7 165.1 Q 810.7 159.2 823.4 140.3",
+      "arrows": [
+        {
+          "x": 808.4,
+          "y": 155.9,
+          "deg": -35.6
+        }
+      ]
+    },
+    {
+      "from": "CTU",
+      "to": "TSN",
+      "flights": 1,
+      "distanceKm": 1640,
+      "totalDistanceKm": 1640,
+      "d": "M 788.7 165.1 Q 811.7 159.9 826 141.3",
+      "arrows": [
+        {
+          "x": 809.5,
+          "y": 156.6,
+          "deg": -32.5
+        }
+      ]
+    },
+    {
+      "from": "DLC",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 1989,
+      "totalDistanceKm": 1989,
+      "d": "M 837.6 141.8 Q 817.7 161.5 790.1 165.8",
+      "arrows": [
+        {
+          "x": 815.8,
+          "y": 157.6,
+          "deg": 153.2
+        }
+      ]
+    },
+    {
+      "from": "DPS",
+      "to": "KUL",
+      "flights": 1,
+      "distanceKm": 1985,
+      "totalDistanceKm": 1985,
+      "d": "M 819.9 274.3 Q 806.4 252.3 782.5 242.4",
+      "arrows": [
+        {
+          "x": 803.8,
+          "y": 255.3,
+          "deg": -139.5
+        }
+      ]
+    },
+    {
+      "from": "DPS",
+      "to": "SGN",
+      "flights": 1,
+      "distanceKm": 2373,
+      "totalDistanceKm": 2373,
+      "d": "M 819.9 274.3 Q 816.7 243.4 796.3 219.9",
+      "arrows": [
+        {
+          "x": 812.4,
+          "y": 245.2,
+          "deg": -113.5
+        }
+      ]
+    },
+    {
+      "from": "FOC",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 1771,
+      "totalDistanceKm": 1771,
+      "d": "M 832.4 178 Q 813.5 164.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 812.4,
+          "y": 168,
+          "deg": -164
+        }
+      ]
+    },
+    {
+      "from": "FOC",
+      "to": "NRT",
+      "flights": 1,
+      "distanceKm": 2255,
+      "totalDistanceKm": 2255,
+      "d": "M 832.4 178 Q 856.8 155.1 890 150.7",
+      "arrows": [
+        {
+          "x": 859,
+          "y": 159.7,
+          "deg": -25.4
+        }
+      ]
+    },
+    {
+      "from": "HND",
+      "to": "OKA",
+      "flights": 1,
+      "distanceKm": 1583,
+      "totalDistanceKm": 1583,
+      "d": "M 888.3 151.2 Q 866.5 157.9 854.6 177.2",
+      "arrows": [
+        {
+          "x": 869,
+          "y": 161.1,
+          "deg": 142.4
+        }
+      ]
+    },
+    {
+      "from": "IST",
+      "to": "PKX",
+      "flights": 1,
+      "distanceKm": 7089,
+      "totalDistanceKm": 7089,
+      "d": "M 579.9 135.3 Q 700.9 173.8 823.4 140.3",
+      "arrows": [
+        {
+          "x": 701.3,
+          "y": 155.8,
+          "deg": 1.2
+        }
+      ]
+    },
+    {
+      "from": "ITM",
+      "to": "OKA",
+      "flights": 1,
+      "distanceKm": 1213,
+      "totalDistanceKm": 1213,
+      "d": "M 876.2 153.4 Q 859.5 159.9 854.6 177.2",
+      "arrows": [
+        {
+          "x": 862.4,
+          "y": 162.6,
+          "deg": 132.2
+        }
+      ]
+    },
+    {
+      "from": "KIX",
+      "to": "PVG",
+      "flights": 1,
+      "distanceKm": 1308,
+      "totalDistanceKm": 1308,
+      "d": "M 875.7 154.4 Q 855.1 151.2 838.3 163.5",
+      "arrows": [
+        {
+          "x": 856.1,
+          "y": 155,
+          "deg": 166.3
+        }
+      ]
+    },
+    {
+      "from": "KIX",
+      "to": "XMN",
+      "flights": 1,
+      "distanceKm": 1985,
+      "totalDistanceKm": 1985,
+      "d": "M 875.7 154.4 Q 847.5 160.5 828.1 181.8",
+      "arrows": [
+        {
+          "x": 849.7,
+          "y": 164.3,
+          "deg": 150
+        }
+      ]
+    },
+    {
+      "from": "KIX",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 2923,
+      "totalDistanceKm": 2923,
+      "d": "M 875.7 154.4 Q 831.1 146.4 790.1 165.8",
+      "arrows": [
+        {
+          "x": 832,
+          "y": 153.2,
+          "deg": 172.4
+        }
+      ]
+    },
+    {
+      "from": "KUL",
+      "to": "TWU",
+      "flights": 1,
+      "distanceKm": 1810,
+      "totalDistanceKm": 1810,
+      "d": "M 782.5 242.4 Q 804.6 232.2 828.1 238",
+      "arrows": [
+        {
+          "x": 804.9,
+          "y": 236.2,
+          "deg": -5.5
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "PVG",
+      "flights": 1,
+      "distanceKm": 1797,
+      "totalDistanceKm": 1797,
+      "d": "M 890 150.7 Q 862.1 148.7 838.3 163.5",
+      "arrows": [
+        {
+          "x": 863.1,
+          "y": 152.9,
+          "deg": 166
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 3388,
+      "totalDistanceKm": 3388,
+      "d": "M 890 150.7 Q 837.6 142.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 838.8,
+          "y": 150.2,
+          "deg": 171.4
+        }
+      ]
+    },
+    {
+      "from": "SGN",
+      "to": "TFU",
+      "flights": 1,
+      "distanceKm": 2182,
+      "totalDistanceKm": 2182,
+      "d": "M 796.3 219.9 Q 801.9 191.9 790.1 165.8",
+      "arrows": [
+        {
+          "x": 797.6,
+          "y": 192.4,
+          "deg": -96.5
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "XMN",
+      "flights": 1,
+      "distanceKm": 1911,
+      "totalDistanceKm": 1911,
+      "d": "M 790.1 165.8 Q 812.2 166.4 828.1 181.8",
+      "arrows": [
+        {
+          "x": 810.7,
+          "y": 170.1,
+          "deg": 22.9
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "TSN",
+      "flights": 1,
+      "distanceKm": 1537,
+      "totalDistanceKm": 1537,
+      "d": "M 790.1 165.8 Q 803.5 147 826 141.3",
+      "arrows": [
+        {
+          "x": 805.8,
+          "y": 150.3,
+          "deg": -34.3
+        }
+      ]
+    }
+  ],
+  "mapLegs": [
+    {
+      "from": "PEK",
+      "to": "CTU",
+      "d": "M 823.8 138.7 Q 811 158.1 788.7 165.1",
+      "arrows": [
+        {
+          "x": 808.6,
+          "y": 155,
+          "deg": 143.1
+        }
+      ]
+    },
+    {
+      "from": "CAI",
+      "to": "PEK",
+      "d": "M 587.2 166.3 Q 709.7 188.3 823.8 138.7",
+      "arrows": [
+        {
+          "x": 707.6,
+          "y": 170.4,
+          "deg": -6.7
+        }
+      ]
+    },
+    {
+      "from": "CAI",
+      "to": "ASW",
+      "d": "M 587.2 166.3 Q 597 173.1 591.2 183.4",
+      "arrows": [
+        {
+          "x": 593.1,
+          "y": 174,
+          "deg": 77.1
+        }
+      ]
+    },
+    {
+      "from": "IST",
+      "to": "CAI",
+      "d": "M 579.9 135.3 Q 575.8 152.7 587.2 166.3",
+      "arrows": [
+        {
+          "x": 579.7,
+          "y": 151.8,
+          "deg": 76.6
+        }
+      ]
+    },
+    {
+      "from": "PKX",
+      "to": "IST",
+      "d": "M 823.4 140.3 Q 702.3 101.8 579.9 135.3",
+      "arrows": [
+        {
+          "x": 702,
+          "y": 119.8,
+          "deg": -178.8
+        }
+      ]
+    },
+    {
+      "from": "CTU",
+      "to": "PKX",
+      "d": "M 788.7 165.1 Q 816.2 166.8 823.4 140.3",
+      "arrows": [
+        {
+          "x": 811.1,
+          "y": 159.7,
+          "deg": -35.6
+        }
+      ]
+    },
+    {
+      "from": "PVG",
+      "to": "TFU",
+      "d": "M 838.3 163.5 Q 814.4 168 790.1 165.8",
+      "arrows": [
+        {
+          "x": 814.3,
+          "y": 166.3,
+          "deg": 177.3
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "PVG",
+      "d": "M 890 150.7 Q 862.5 150.5 838.3 163.5",
+      "arrows": [
+        {
+          "x": 863.3,
+          "y": 153.8,
+          "deg": 166
+        }
+      ]
+    },
+    {
+      "from": "OKA",
+      "to": "HND",
+      "d": "M 854.6 177.2 Q 876.3 170.6 888.3 151.2",
+      "arrows": [
+        {
+          "x": 873.9,
+          "y": 167.4,
+          "deg": -37.6
+        }
+      ]
+    },
+    {
+      "from": "ITM",
+      "to": "OKA",
+      "d": "M 876.2 153.4 Q 859.5 159.9 854.6 177.2",
+      "arrows": [
+        {
+          "x": 862.4,
+          "y": 162.6,
+          "deg": 132.2
+        }
+      ]
+    },
+    {
+      "from": "PVG",
+      "to": "KIX",
+      "d": "M 838.3 163.5 Q 858.9 166.7 875.7 154.4",
+      "arrows": [
+        {
+          "x": 858,
+          "y": 162.8,
+          "deg": -13.7
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "PVG",
+      "d": "M 790.1 165.8 Q 813.9 157.9 838.3 163.5",
+      "arrows": [
+        {
+          "x": 814.1,
+          "y": 161.2,
+          "deg": -2.7
+        }
+      ]
+    },
+    {
+      "from": "CGQ",
+      "to": "CTU",
+      "d": "M 849.1 127.8 Q 813.1 136.9 788.7 165.1",
+      "arrows": [
+        {
+          "x": 816,
+          "y": 141.7,
+          "deg": 148.3
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "CGQ",
+      "d": "M 790.1 165.8 Q 835.8 171.8 849.1 127.8",
+      "arrows": [
+        {
+          "x": 827.7,
+          "y": 159.3,
+          "deg": -32.8
+        }
+      ]
+    },
+    {
+      "from": "DLC",
+      "to": "TFU",
+      "d": "M 837.6 141.8 Q 815.9 157.9 790.1 165.8",
+      "arrows": [
+        {
+          "x": 814.9,
+          "y": 155.8,
+          "deg": 153.2
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "DLC",
+      "d": "M 890 150.7 Q 864.8 140.1 837.6 141.8",
+      "arrows": [
+        {
+          "x": 864.3,
+          "y": 143.2,
+          "deg": -170.4
+        }
+      ]
+    },
+    {
+      "from": "CTS",
+      "to": "HND",
+      "d": "M 893.6 131.2 Q 896.9 142.8 888.3 151.2",
+      "arrows": [
+        {
+          "x": 893.9,
+          "y": 142,
+          "deg": 104.8
+        }
+      ]
+    },
+    {
+      "from": "HKD",
+      "to": "CTS",
+      "d": "M 891.2 134 Q 898.4 137.8 893.6 131.2",
+      "arrows": [
+        {
+          "x": 895.4,
+          "y": 135.2,
+          "deg": -49.1
+        }
+      ]
+    },
+    {
+      "from": "HND",
+      "to": "CTS",
+      "d": "M 888.3 151.2 Q 884.9 139.6 893.6 131.2",
+      "arrows": [
+        {
+          "x": 887.9,
+          "y": 140.4,
+          "deg": -75.2
+        }
+      ]
+    },
+    {
+      "from": "DLC",
+      "to": "NRT",
+      "d": "M 837.6 141.8 Q 863 150.5 890 150.7",
+      "arrows": [
+        {
+          "x": 863.4,
+          "y": 148.4,
+          "deg": 9.6
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "CGQ",
+      "d": "M 790.1 165.8 Q 830 162.9 849.1 127.8",
+      "arrows": [
+        {
+          "x": 824.8,
+          "y": 154.9,
+          "deg": -32.8
+        }
+      ]
+    },
+    {
+      "from": "CGQ",
+      "to": "TFU",
+      "d": "M 849.1 127.8 Q 824.4 154.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 822,
+          "y": 150.5,
+          "deg": 147.2
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "CGQ",
+      "d": "M 790.1 165.8 Q 818.8 145.4 849.1 127.8",
+      "arrows": [
+        {
+          "x": 819.2,
+          "y": 146.1,
+          "deg": -32.8
+        }
+      ]
+    },
+    {
+      "from": "CGQ",
+      "to": "TFU",
+      "d": "M 849.1 127.8 Q 807.2 127.5 790.1 165.8",
+      "arrows": [
+        {
+          "x": 813.4,
+          "y": 137.1,
+          "deg": 147.2
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "CGQ",
+      "d": "M 790.1 165.8 Q 801.5 118.7 849.1 127.8",
+      "arrows": [
+        {
+          "x": 810.6,
+          "y": 132.8,
+          "deg": -32.8
+        }
+      ]
+    },
+    {
+      "from": "KUL",
+      "to": "TFU",
+      "d": "M 782.5 242.4 Q 780.2 203.5 790.1 165.8",
+      "arrows": [
+        {
+          "x": 783.2,
+          "y": 203.8,
+          "deg": -84.3
+        }
+      ]
+    },
+    {
+      "from": "TWU",
+      "to": "KUL",
+      "d": "M 828.1 238 Q 806.1 248.1 782.5 242.4",
+      "arrows": [
+        {
+          "x": 805.7,
+          "y": 244.2,
+          "deg": 174.5
+        }
+      ]
+    },
+    {
+      "from": "BKI",
+      "to": "TWU",
+      "d": "M 822.4 233.5 Q 830.2 229.4 828.1 238",
+      "arrows": [
+        {
+          "x": 827.7,
+          "y": 232.6,
+          "deg": 37.9
+        }
+      ]
+    },
+    {
+      "from": "CAN",
+      "to": "BKI",
+      "d": "M 814.7 185 Q 826.4 208 822.4 233.5",
+      "arrows": [
+        {
+          "x": 822.5,
+          "y": 208.6,
+          "deg": 81
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "CAN",
+      "d": "M 790.1 165.8 Q 797.5 181.7 814.7 185",
+      "arrows": [
+        {
+          "x": 800,
+          "y": 178.6,
+          "deg": 38
+        }
+      ]
+    },
+    {
+      "from": "FOC",
+      "to": "TFU",
+      "d": "M 832.4 178 Q 811.8 170 790.1 165.8",
+      "arrows": [
+        {
+          "x": 811.5,
+          "y": 170.9,
+          "deg": -164
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "FOC",
+      "d": "M 890 150.7 Q 865.6 173.5 832.4 178",
+      "arrows": [
+        {
+          "x": 863.4,
+          "y": 168.9,
+          "deg": 154.6
+        }
+      ]
+    },
+    {
+      "from": "XMN",
+      "to": "KIX",
+      "d": "M 828.1 181.8 Q 856.3 175.7 875.7 154.4",
+      "arrows": [
+        {
+          "x": 854.1,
+          "y": 171.9,
+          "deg": -30
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "XMN",
+      "d": "M 790.1 165.8 Q 808 176.6 828.1 181.8",
+      "arrows": [
+        {
+          "x": 808.5,
+          "y": 175.2,
+          "deg": 22.9
+        }
+      ]
+    },
+    {
+      "from": "NRT",
+      "to": "TFU",
+      "d": "M 890 150.7 Q 837.6 142.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 838.8,
+          "y": 150.2,
+          "deg": 171.4
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "KIX",
+      "d": "M 790.1 165.8 Q 834.7 173.8 875.7 154.4",
+      "arrows": [
+        {
+          "x": 833.8,
+          "y": 166.9,
+          "deg": -7.6
+        }
+      ]
+    },
+    {
+      "from": "KUL",
+      "to": "TFU",
+      "d": "M 782.5 242.4 Q 792.5 204.7 790.1 165.8",
+      "arrows": [
+        {
+          "x": 789.4,
+          "y": 204.4,
+          "deg": -84.3
+        }
+      ]
+    },
+    {
+      "from": "DPS",
+      "to": "KUL",
+      "d": "M 819.9 274.3 Q 806.4 252.3 782.5 242.4",
+      "arrows": [
+        {
+          "x": 803.8,
+          "y": 255.3,
+          "deg": -139.5
+        }
+      ]
+    },
+    {
+      "from": "SGN",
+      "to": "DPS",
+      "d": "M 796.3 219.9 Q 799.5 250.9 819.9 274.3",
+      "arrows": [
+        {
+          "x": 803.8,
+          "y": 249,
+          "deg": 66.5
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "SGN",
+      "d": "M 790.1 165.8 Q 784.4 193.9 796.3 219.9",
+      "arrows": [
+        {
+          "x": 788.8,
+          "y": 193.4,
+          "deg": 83.5
+        }
+      ]
+    },
+    {
+      "from": "DLU",
+      "to": "TFU",
+      "d": "M 778.7 178.8 Q 779.7 168.2 790.1 165.8",
+      "arrows": [
+        {
+          "x": 782.1,
+          "y": 170.2,
+          "deg": -48.5
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "DLU",
+      "d": "M 790.1 165.8 Q 789 176.4 778.7 178.8",
+      "arrows": [
+        {
+          "x": 786.7,
+          "y": 174.3,
+          "deg": 131.5
+        }
+      ]
+    },
+    {
+      "from": "TSN",
+      "to": "CTU",
+      "d": "M 826 141.3 Q 798.1 138.7 788.7 165.1",
+      "arrows": [
+        {
+          "x": 802.7,
+          "y": 145.9,
+          "deg": 147.5
+        }
+      ]
+    },
+    {
+      "from": "TFU",
+      "to": "TSN",
+      "d": "M 790.1 165.8 Q 803.5 147 826 141.3",
+      "arrows": [
+        {
+          "x": 805.8,
+          "y": 150.3,
+          "deg": -34.3
+        }
+      ]
+    }
+  ],
+  "airlines": {
+    "Air China": {
+      "flights": 7,
+      "distanceKm": 18081,
+      "durationMin": 1586
+    },
+    "Egyptair": {
+      "flights": 1,
+      "distanceKm": 698,
+      "durationMin": 80
+    },
+    "Air Cairo": {
+      "flights": 1,
+      "distanceKm": 1221,
+      "durationMin": 125
+    },
+    "China Southern Airlines": {
+      "flights": 8,
+      "distanceKm": 22206,
+      "durationMin": 2090
+    },
+    "Shanghai Airlines": {
+      "flights": 1,
+      "distanceKm": 1782,
+      "durationMin": 205
+    },
+    "China Eastern Airlines": {
+      "flights": 3,
+      "distanceKm": 4887,
+      "durationMin": 545
+    },
+    "All Nippon Airways": {
+      "flights": 7,
+      "distanceKm": 7957,
+      "durationMin": 890
+    },
+    "Sichuan Airlines": {
+      "flights": 5,
+      "distanceKm": 13560,
+      "durationMin": 1255
+    },
+    "Loong Air": {
+      "flights": 1,
+      "distanceKm": 1989,
+      "durationMin": 310
+    },
+    "Malindo Air": {
+      "flights": 3,
+      "distanceKm": 6877,
+      "durationMin": 650
+    },
+    "AirAsia": {
+      "flights": 1,
+      "distanceKm": 276,
+      "durationMin": 50
+    },
+    "Xiamen Airlines": {
+      "flights": 4,
+      "distanceKm": 7922,
+      "durationMin": 765
+    },
+    "VietJet Air": {
+      "flights": 2,
+      "distanceKm": 4555,
+      "durationMin": 465
+    }
+  },
+  "manufacturers": {
+    "Boeing": {
+      "flights": 18
+    },
+    "Airbus": {
+      "flights": 24
+    },
+    "De Havilland": {
+      "flights": 1
+    },
+    "COMAC": {
+      "flights": 1
+    }
+  },
+  "aircraft": {
+    "737": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "737-89L(WL)": {
+      "manufacturer": "Boeing",
+      "flights": 2
+    },
+    "A330-343X": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "737-866": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "A320-214": {
+      "manufacturer": "Airbus",
+      "flights": 2
+    },
+    "787-9": {
+      "manufacturer": "Boeing",
+      "flights": 2
+    },
+    "A350-941": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "737 MAX 8": {
+      "manufacturer": "Boeing",
+      "flights": 2
+    },
+    "321-251NX": {
+      "manufacturer": "Airbus",
+      "flights": 2
+    },
+    "787-10": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "A330-243": {
+      "manufacturer": "Airbus",
+      "flights": 2
+    },
+    "320-232": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "321-231": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A320-271N": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "320-251N": {
+      "manufacturer": "Airbus",
+      "flights": 3
+    },
+    "787-8": {
+      "manufacturer": "Boeing",
+      "flights": 2
+    },
+    "777-281/ER": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "DHC-8-400": {
+      "manufacturer": "De Havilland",
+      "flights": 1
+    },
+    "777-281(ER)": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "321-213": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A320-232": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A320-251N": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A321-271N": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "737-86N": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "A320-216": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "321-253NX": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "C919": {
+      "manufacturer": "COMAC",
+      "flights": 1
+    },
+    "737-85C": {
+      "manufacturer": "Boeing",
+      "flights": 2
+    },
+    "737-800": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "A321-271NX": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A321NEO": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "A320-200": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    },
+    "737-79L(WL)": {
+      "manufacturer": "Boeing",
+      "flights": 1
+    },
+    "319-115": {
+      "manufacturer": "Airbus",
+      "flights": 1
+    }
+  },
+  "footprint": {
+    "continents": 3,
+    "countries": 7,
+    "cities": 24,
+    "airports": 27,
+    "routes": 34,
+    "continentList": [
+      "Africa",
+      "Asia",
+      "Europe"
+    ],
+    "byContinent": {
+      "Asia": {
+        "airports": 24,
+        "visits": 82
+      },
+      "Africa": {
+        "airports": 2,
+        "visits": 4
+      },
+      "Europe": {
+        "airports": 1,
+        "visits": 2
+      }
+    }
+  },
+  "skippedCount": 0
+}

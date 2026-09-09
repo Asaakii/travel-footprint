@@ -1,0 +1,18 @@
+{
+  "name": "travel-footprint",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A standalone static travel-footprint dashboard.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "travel:import": "node tools/import-travel-data.js",
+    "maps:base": "node tools/build-travel-basemap.js",
+    "maps:labels": "node tools/build-travel-map-labels.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "devDependencies": {
+    "pug": "3.0.3",
+    "stylus": "0.62.0"
+  }
+}

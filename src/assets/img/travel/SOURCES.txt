@@ -1,0 +1,30 @@
+# 航司/制造商 logo 素材来源说明
+
+本目录下多数 SVG 下载自 Wikimedia Commons（Special:FilePath），属简单文字/图形标识，
+在 Commons 上通常以 PD-textlogo（低于原创性门槛）状态发布；使用前请自行复核对应文件页的许可状态。
+中国南方航空、中国国际航空、四川航空及 COMAC 的真实标志来自中文维基百科本地文件库，文件页均标为 Fair use / 非自由媒体；
+可公开访问不代表可自由再授权，若页面将用于商业发布，应取得航司许可或改为文字徽标。
+无法取得可验证开放授权素材的航司/制造商，页面会自动回退到两字符文字标识。
+中国东航、埃及航空、长龙航空、上海航空、厦门航空不再使用项目绘制的标志；页面直接引用下表的真实公开文件。
+
+新增/替换方式：把对应 logo 文件放入本目录，文件名规则为名称小写去非字母数字（如 `airchina.svg`），
+页面会优先加载本地文件，加载失败自动回退文字徽标。
+
+| 文件 | 来源文件名（Wikimedia Commons） |
+| --- | --- |
+| airlines/allnipponairways.svg | All_Nippon_Airways_Logo.svg |
+| airlines/airasia.svg | AirAsia_Logo.svg |
+| airlines/aircairo.svg | Air_Cairo_logo.svg |
+| airlines/malindoair.svg | Malindo_Air_logo.svg |
+| airlines/vietjetair.svg | VietJet_Air_logo.svg |
+| airlines/chinasouthernairlines.svg | [中文维基百科：China Southern Airlines logo.svg](https://zh.wikipedia.org/wiki/File:China_Southern_Airlines_logo.svg)，Fair use |
+| airlines/airchina.svg | [中文维基百科：Air China.svg](https://zh.wikipedia.org/wiki/File:Air_China.svg)，Fair use |
+| airlines/sichuanairlines.svg | [中文维基百科：Sichuan Airlines logo.svg](https://zh.wikipedia.org/wiki/File:Sichuan_Airlines_logo.svg)，Fair use |
+| China Eastern Airlines | [English Wikipedia 本地文件：China Eastern Airlines logo.svg](https://upload.wikimedia.org/wikipedia/en/6/6b/China_Eastern_Airlines_logo.svg)，非自由媒体 / 商标 |
+| Egyptair | [Wikimedia Commons：Egyptair-Logo-2010.svg](https://commons.wikimedia.org/wiki/File:Egyptair-Logo-2010.svg)，仍受商标权约束 |
+| Loong Air | [English Wikipedia 本地文件：LoongAir logo.png](https://upload.wikimedia.org/wikipedia/en/3/35/LoongAir_logo.png)，非自由媒体 / 商标 |
+| Shanghai Airlines | [English Wikipedia 本地文件：Shanghai Airlines.svg](https://upload.wikimedia.org/wikipedia/en/4/4e/Shanghai_Airlines.svg)，非自由媒体 / 商标 |
+| Xiamen Airlines | [厦门航空官网：logo@3x.svg](https://www.xiamenair.com/i18n-ow-_nuxt/img/logo@3x.7a49c02.svg)，商标 |
+| manufacturers/airbus.svg | Airbus_Logo_2017.svg |
+| manufacturers/boeing.svg | Boeing_full_logo.svg |
+| manufacturers/comac.svg | [中文维基百科：COMAC logo.svg](https://zh.wikipedia.org/wiki/File:Commercial_Aircraft_Corporation_of_China_(COMAC)_logo.svg)，Fair use |
